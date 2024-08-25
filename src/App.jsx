@@ -10,10 +10,10 @@ function App() {
   const [topText, setTopText] = useState('Example Text 1');
   const [bottomText, setBottomText] = useState('Example Text 2');
   const [font, setFont] = useState('Roboto');
-  const [fontSize, setFontSize] = useState(32);
-  const [topMargin, setTopMargin] = useState(50);
-  const [bottomMargin, setBottomMargin] = useState(50);
-  const [leftMargin, setLeftMargin] = useState(50);
+  const [fontSize, setFontSize] = useState(148);
+  const [topMargin, setTopMargin] = useState(64);
+  const [bottomMargin, setBottomMargin] = useState(64);
+  const [leftMargin, setLeftMargin] = useState(64);
   const canvasRef = useRef(null);
 
   const availableFonts = ['Arial', 'Roboto', 'Open Sans'];
@@ -85,7 +85,7 @@ function App() {
       <h1 className='m-3 text-center'>Youtube Preview Maker</h1>
       <Form className='mx-2'>
         <Row className='p-1'>
-          <Form.Control type="file" onChange={handleImageUpload} />
+          <Form.Control type="file" accept="image/*" onChange={handleImageUpload} />
         </Row>
 
         <Row>
