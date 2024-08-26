@@ -16,7 +16,7 @@ function App() {
   const [leftMargin, setLeftMargin] = useState(64);
   const canvasRef = useRef(null);
 
-  const availableFonts = ['Arial', 'Roboto', 'Open Sans'];
+  const availableFonts = ['Arial', 'Roboto', 'Open Sans', 'Rampart One', 'Seymour One' ];
 
   useEffect(() => {
     const handleResize = () => drawCanvas();
